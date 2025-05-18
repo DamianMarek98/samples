@@ -6,4 +6,5 @@ Currently included:
 - **CQRS**: Examples and experiments with Command Query Responsibility Segregation (in progress).
 - **Spring**:
   - Security: setup example using OAuth
-  - MCP: in-progress Spring MCP implementation
+- **MCP**: In-progress Spring MCP implementation
+
