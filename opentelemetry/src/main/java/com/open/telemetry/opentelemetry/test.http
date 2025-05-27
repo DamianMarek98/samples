@@ -1,0 +1,5 @@
+### GET request to fetch cars
+GET http://localhost:8080/cars
+
+### GET request to fetch a specific car price by brand and model
+GET http://localhost:8081/price?brand=TOYOTA&model=Camry

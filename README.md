@@ -7,4 +7,5 @@ Currently included:
 - **Spring**:
   - Security: setup example using OAuth
 - **MCP**: In-progress Spring MCP implementation
+- **OpenTelemetry**: Example of using OpenTelemetry with Spring
 
