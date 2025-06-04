@@ -1,0 +1,18 @@
+services:
+  opentelemetry:
+    build: ./
+    ports:
+      - "8080:8080"
+
+  price-service:
+    build: price-service/
+    ports:
+      - "8081:8081"
+
+  collector:
+    image: jaegertracing/all-in-one:latest
+    ports:
+      - "4318:4318"
+      - "16686:16686"
+    environment:
+      - COLLECTOR_OTLP_ENABLED=true
