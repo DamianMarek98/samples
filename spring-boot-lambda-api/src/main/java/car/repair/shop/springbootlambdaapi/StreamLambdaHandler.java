@@ -11,6 +11,14 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
+/**
+ * This works as handler for lambda function, need to upload shadow jar to lambda function
+ * and set handler to "car.repair.shop.springbootlambdaapi.StreamLambdaHandler::handleRequest"
+ * Create Rest api API Gateway
+ * create new resource for /api and additional (select /api) /cars
+ * then choose create method, select method, choose Lambda Function and IMPORTANT check Lambda proxy integration
+ * remember that lambda needs resource based policy to be invoked by API Gateway
+ */
 public class StreamLambdaHandler implements RequestStreamHandler {
 
     private static final SpringBootLambdaContainerHandler<AwsProxyRequest, AwsProxyResponse> handler;
