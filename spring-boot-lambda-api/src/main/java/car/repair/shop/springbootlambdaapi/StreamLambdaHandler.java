@@ -18,6 +18,8 @@ import java.io.OutputStream;
  * create new resource for /api and additional (select /api) /cars
  * then choose create method, select method, choose Lambda Function and IMPORTANT check Lambda proxy integration
  * remember that lambda needs resource based policy to be invoked by API Gateway
+ * For better startup use lambda snapStart, go to lambda configuration -> SnapStart -> Published Version
+ * Then go yor Lambda - select Actions - Publish new version
  */
 public class StreamLambdaHandler implements RequestStreamHandler {
 
